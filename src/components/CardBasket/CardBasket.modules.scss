@@ -1,0 +1,238 @@
+.card {
+    margin: 40px 0 38px;
+    width: 1170px;
+    height: 150px;
+    display: flex;
+
+    .img {
+        width: 125px;
+        height: 150px;
+        margin: 2px 0 0 12px;
+        background: center no-repeat;
+        background-size: 125%;
+    }
+
+    .name {
+        margin: 62px 0 0 64px;
+        width: 274px;
+        height: 64px;
+    }
+
+    .quantity {
+        margin: 60px 0 0 150px;
+        display: flex;
+
+        .minus,
+        .plus {
+            width: 42px;
+            height: 40px;
+            border: 1px solid #A8AFBB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        .quantityBox {
+            width: 75px;
+            height: 40px;
+            border-top: 1px solid #A8AFBB;
+            border-bottom: 1px solid #A8AFBB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .minus:hover,
+        .plus:hover {
+            border: 1px solid #296DC1;
+            background: #296DC1;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    .price {
+        margin: 69px 0 0 160px; // корекция 68px 0 0 159px
+        width: 85px;
+        height: 23px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .close {
+        width: 42px;
+        height: 40px;
+        margin: 60px 0 0 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    .close:hover {
+        background: #296DC1;
+        color: #ffffff;
+        cursor: pointer;        
+    }    
+}
+
+
+
+@media (max-width: 1200px) {
+    .card{
+        width: 930px;
+
+        .name {
+            margin: 62px 0 0 56px;
+        }
+
+        .quantity {
+            margin: 60px 0 0 48px;
+        }
+
+        .price {
+            margin: 69px 0 0 76px;
+        }
+
+        .close {
+            margin: 60px 0 0 38px;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .card{
+        width: calc(100vw - 2 * 30px);
+
+        .img {
+            margin: 2px 0 0 0;
+        }
+
+        .name {
+            margin: 62px 0 0 calc(62 * (100vw - 705px) / 282);
+        }
+
+        .quantity {
+            margin: 60px 0 0 calc(54 * (100vw - 705px) / 282);
+
+            .quantityBox {
+                width: 35px;
+            }
+        }
+
+        .price {
+            margin: 69px 0 0 calc(122 * (100vw - 705px) / 282);
+        }
+
+        .close {
+            margin: 60px 0 0 calc(44 * (100vw - 705px) / 282);
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .card {
+        width: 444px;
+        height: 603px;
+        margin: 30px auto;
+        flex-direction: column;
+
+        .img {
+            width: 335px;
+            height: 399px;
+            margin: 5px auto 0;
+            order: 0;
+        }
+    
+        .name {
+            margin: 11px auto 0;
+            width: 380px;
+            height: 42px;
+            order: 1;
+            text-align: center;
+        }
+
+        .price {
+            margin: 20px auto 0;
+            width: 91px;
+            order: 2;
+            text-align: center;
+        }
+    
+        .quantity {
+            margin: 10px auto 0;
+            order: 3;
+            display: flex;
+    
+            .quantityBox {
+                width: 66px;
+            }
+        }
+    
+        .close {
+            width: 171px;
+            height: 40px;
+            margin: 13px auto 0;
+            order: 4;
+            background: #296DC1;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-left: 35px;
+            font-size: 34px;
+            position: relative;
+        }
+
+        .close:after {
+            content: "Удалить";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            color: #ffffff;
+            padding-left: 62px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    }
+}
+
+// @media (max-width: 580px) {}
+
+@media (max-width: 522px) {
+    .card {
+        width: 250px;
+        height: 424px;
+
+        .img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-size: 100%;
+        }
+    
+        .name {
+            margin: 15px auto 0;
+            width: 250px;
+            height: 63px;
+        }
+
+        .price {
+            margin: 15px auto 0;
+            width: 91px;
+        }
+    
+        .quantity {
+            margin: 12px auto 0;
+        }
+    
+        .close {
+            margin: 15px auto 0;
+        }
+    }
+}

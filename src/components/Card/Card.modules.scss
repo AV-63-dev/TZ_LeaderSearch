@@ -1,0 +1,141 @@
+.card {
+    width: 270px;
+    height: 380px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+
+    .img {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    .name {
+        margin: 34px auto 0 auto;
+        width: 230px;
+        height: 63px;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .price {
+        margin: 15px auto 0 auto;
+        width: 85px;
+        height: 23px;
+        font-weight: bold;
+        font-size: 18px;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .btn {
+        display: none;
+        margin: 15px auto 0 auto;
+        width: 184px;
+        height: 40px;
+        background: #296DC1;
+        color: #FFFFFF;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 130%;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .click {
+        background: #00A82D;
+    }
+
+}
+
+.card:hover {
+    .name {
+        margin: 4px auto 0 auto;
+    }
+
+    .btn {
+        display: flex;
+    }
+}
+
+// @media (max-width: 1200px) {}
+
+@media (max-width: 990px) {
+    .card {
+        width: calc( ( 100vw - 2 * 30px - 2 * 20px) / 3);
+
+        .name {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .card {
+        width: 450px;
+        height: 590px;
+
+        .img {
+            width: 400px;
+            height: 400px;
+            margin: 20px auto 0;
+        }
+
+        .name {
+            margin: 15px auto 0 auto;
+            width: 330px;
+            height: 42px;
+        }
+
+        .btn {
+            display: flex;
+            width: 186px;
+        }
+    }
+
+    .card:hover {
+        .name {
+            margin: 15px auto 0 auto;
+        }
+    }
+}
+
+// @media (max-width: 580px) {}
+
+@media (max-width: 522px) {
+    .card {
+        width: 270px;
+        height: 380px;
+
+        .img {
+            width: 200px;
+            height: 200px;
+            margin: 10px auto 0;
+        }
+
+        .name {
+            margin: 4px auto 0 auto;
+            width: 230px;
+            height: 63px;
+        }
+
+        
+    }
+
+    .card:hover {
+        .name {
+            margin: 4px auto 0 auto;
+        }
+    }
+}
